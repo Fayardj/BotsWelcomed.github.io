@@ -7,930 +7,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
   <script type="text/javascript">
-   // Redirect to phone/tablet as necessary
-(function(a,b,c){var d=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var f=a[b]+"MaxTouchPoints";if(f in navigator&&navigator[f])return!0}try{return document.createEvent("TouchEvent"),!0}catch(d){}return!1}(),g=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var f=b[c];f.charAt(0)==" ";)f=f.substring(1,f.length);if(f.indexOf(a)==
-0)return f.substring(a.length,f.length)}return null};if(g("inbrowserediting")!="true"){var f,g=g("devicelock");g=="phone"&&c?f=c:g=="tablet"&&b&&(f=b);if(g!=a&&!f)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&c?f=c:window.matchMedia("(max-device-width: 960px)").matches&&b&&d&&(f=b);else{var a=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),g=window.screen.systemXDPI||0,i=window.screen.systemYDPI||0,g=g>0&&i>0?Math.min(screen.width/g,screen.height/i):
-0;(a<=370||g!=0&&g<=3)&&c?f=c:a<=960&&b&&d&&(f=b)}if(f)document.location=f+(document.location.search||"")+(document.location.hash||""),document.write('<style type="text/css">body {visibility:hidden}</style>')}})("desktop","","phone/index.html");
-
-// Update the 'nojs'/'js' class on the html node
+   // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "webpro.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "webpro.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
-  <link media="only screen and (max-width: 370px)" rel="alternate" href="http://botswelcomed.com/phone/index.html"/>
-  <link rel="shortcut icon" href="images/favicon.ico?crc=109184349"/>
+  <link rel="canonical" href="http://botswelcomed.com/index.html"/>
   <title>Home</title>
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4010076527"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=192884949" id="pagesheet"/>
-  <!-- IE-only CSS -->
-  <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=164392085" id="nomq_pagesheet"/>
-  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/site_global.css?crc=4010076527"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=172520453" id="pagesheet"/>
   <!-- JS includes -->
-  <!--[if lt IE 9]>
-  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
-  <![endif]-->
-  <script src="https://use.typekit.net/ik/HHvmdjhaq9udNN2GsSJIiG9aBY7smGe9qxrzMs1Lim6feCJgf5PxN3bPHQI3wDbhF2jtWD6XZAByZe9D5Q4KwQ9DwRw3FcbojDjD5A48Fe48wQ6UeR67Oc4ziYFaZAURdhu8ZfoRdhXCjcNXSai8deFzdAmqOcFzdPUaiaS0jcNXSai8deFzdAmqOcFzdPJ4Z1mXiW4yOWgXJ6Z8iW4zSeI7fbKImsMMeMb6MKG4fJZmIMMjMkMfH6qJ71qbMs6IJMJ7f6Rqy6IbMs65JMJ7fbKGpsMgeMS6MqGIQWmDZZMgGpRvuM9.js" type="text/javascript"></script>
+  <script src="https://use.typekit.net/ik/lKnmLG2uayb4qZsX1xmd-54UKDRgQj0S9evoabYnD_Xfe73gf5PxN3bPHQI3wDbhF2jtWD6XZAByZe9D5Q4KwQ9DwRw3FcbojDjD5A48Fe48wQ6UeR67Oc4ziYFaZAURdhu8ZfoRdhXCjcNXSai8deFzdAmqOcFzdPUaiaS0jcNXSai8deFzdAmqOcFzdPJ4Z1mXiW4yOWgXJ6Z8iW4zSeI7fbKemsMMeMw6MKG4fHToIMIjgfMfH6GJoJjgIMIj2KMfP6sFiWF8qMYm_zD9gb.js" type="text/javascript"></script>
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
 </script>
     <!--HTML Widget code-->
   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 <style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #0729F2;
-  text-align: center;
-  background-color: #0E1E28;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
+/* Icomoon.com */
+
+.gn-menu-main,
+.gn-menu-main ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		background: #FFFFFF;
+		color: #29AAE1;
+    letter-spacing: 0px;
+		list-style: none;
+		text-transform: none;
+		line-height: 60px;
 }
 
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
+.gn-menu-main {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 60px;
+		font-size: 13px;
+}
+
+.gn-menu-main a {
+		display: block;
+		height: 100%;
+		color: #29AAE1;
+		text-decoration: none;
+		cursor: pointer;
+}
+
+.no-touch .gn-menu-main a:hover,
+.no-touch .gn-menu li.gn-search-item:hover,
+.no-touch .gn-menu li.gn-search-item:hover a {
+		background: #7F7F7F;
+		color: #29AAE1;
+}
+
+.gn-menu-main > li {
+		display: block;
+		float: left;
+		height: 100%;
+		border-right: 1px solid #c6d0da;
+		text-align: center;
+}
+
+/* icon-only trigger (menu item) */
+
+.gn-menu-main li.gn-trigger {
+		position: relative;
+		width: 60px;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+
+.gn-menu-main > li:last-child {
+		float: right;
+		border-right: none;
+		border-left: 3px solid #FFFFFF;
+}
+
+.gn-menu-main > li > a {
+		padding: 0 30px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+}
+
+.gn-menu-main:after {
+		display: table;
+		clear: both;
+		content: "";
+}
+
+.gn-menu-wrapper {
+		position: fixed;
+		top: 60px;
+		bottom: 0;
+		right: 0;
+		overflow: hidden;
+		width: 60px;
+		border-top: 3px solid #FFFFFF;
+		background: #FFFFFF;
+		-webkit-transform: translateX(60px);
+		-moz-transform: translateX(60px);
+		transform: translateX(60px);
+		-webkit-transition: -webkit-transform 0.3s, width 0.3s;
+		-moz-transition: -moz-transform 0.3s, width 0.3s;
+		transition: transform 0.3s, width 0.3s;
+}
+
+.gn-scroller {
+		position: absolute;
+		overflow-y: scroll;
+		width: 370px;
+		height: 100%;
+}
+
+.gn-menu {
+		border-bottom: 3px solid #FFFFFF;
+		text-align: left;
+		font-size: 18px;
+}
+
+.gn-menu li:not(:first-child),
+.gn-menu li li {
+		box-shadow: inset 0 1px #FFFFFF
+}
+
+.fa::before {
+		display: inline-block;
+		width: 60px;
+		text-align: center;
+		text-transform: none;
+		font-weight: normal;
+		font-style: normal;
+		font-variant: normal;
+		line-height: 1;
+		speak: none;
+		-webkit-font-smoothing: antialiased;
+}
+
+.gn-icon::before {
+		display: inline-block;
+		width: 60px;
+		text-align: center;
+		text-transform: none;
+		font-weight: normal;
+		font-style: normal;
+		font-variant: normal;
+		font-family: 'ecoicons';
+		line-height: 1;
+		speak: none;
+		-webkit-font-smoothing: antialiased;
+}
+
+/* if an icon anchor has a span, hide the span */
+
+.gn-icon span {
+		width: 0;
+		height: 0;
+		display: block;
+		overflow: hidden;
+}
+
+.gn-icon-menu::before {
+		margin-left: -15px;
+		vertical-align: -2px;
+		width: 30px;
+		height: 3px;
+		background: #29AAE1;
+		box-shadow: 0 3px transparent, 0 -6px #29AAE1, 0 -9px transparent, 0 -12px #29AAE1;
+		content: '';
+}
+
+.no-touch .gn-icon-menu:hover::before,
+.no-touch .gn-icon-menu.gn-selected:hover::before {
+		background: #0E1E28;
+		box-shadow: 0 3px transparent, 0 -6px #0E1E28, 0 -9px transparent, 0 -12px #0E1E28;
+}
+
+.gn-icon-menu.gn-selected::before {
+		background: #7F7F7F;
+		box-shadow: 0 3px transparent, 0 -6px #7F7F7F, 0 -9px transparent, 0 -12px #7F7F7F;
+}
+
+/* styles for opening menu */
+
+.gn-menu-wrapper.gn-open-all,
+.gn-menu-wrapper.gn-open-part {
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		transform: translateX(0px);
+}
+
+.gn-menu-wrapper.gn-open-all {
+		width: 340px
+}
+
+.gn-menu-wrapper.gn-open-all .gn-submenu li {
+		height: 60px
+}
+
+@media screen and (max-width: 422px) {
+	.gn-menu-wrapper.gn-open-all {
+			-webkit-transform: translateX(0px);
+			-moz-transform: translateX(0px);
+			transform: translateX(0px);
+			width: 100%;
+	}
+
+	.gn-menu-wrapper.gn-open-all .gn-scroller {
+			width: 130%
+	}
 }
 </style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #0729F2;
-  text-align: center;
-  background-color: #000000;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #0729F2;
-  text-align: center;
-  background-color: #000000;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 10em;
-  font-weight: 900;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
+<script src="https://cdn.jsdelivr.net/classie/1.0.1/classie.js"></script>
+<script>
+/* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-shiv-cssclasses-teststyles-prefixes-load
+ */
+;window.Modernizr=function(a,b,c){function w(a){j.cssText=a}function x(a,b){return w(m.join(a+";")+(b||""))}function y(a,b){return typeof a===b}function z(a,b){return!!~(""+a).indexOf(b)}function A(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:y(f,"function")?f.bind(d||b):f}return!1}var d="2.6.2",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={},o={},p={},q=[],r=q.slice,s,t=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},u={}.hasOwnProperty,v;!y(u,"undefined")&&!y(u.call,"undefined")?v=function(a,b){return u.call(a,b)}:v=function(a,b){return b in a&&y(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:t(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var B in n)v(n,B)&&(s=B.toLowerCase(),e[s]=n[B](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)v(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},w(""),i=k=null,function(a,b){function k(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function l(){var a=r.elements;return typeof a=="string"?a.split(" "):a}function m(a){var b=i[a[g]];return b||(b={},h++,a[g]=h,i[h]=b),b}function n(a,c,f){c||(c=b);if(j)return c.createElement(a);f||(f=m(c));var g;return f.cache[a]?g=f.cache[a].cloneNode():e.test(a)?g=(f.cache[a]=f.createElem(a)).cloneNode():g=f.createElem(a),g.canHaveChildren&&!d.test(a)?f.frag.appendChild(g):g}function o(a,c){a||(a=b);if(j)return a.createDocumentFragment();c=c||m(a);var d=c.frag.cloneNode(),e=0,f=l(),g=f.length;for(;e<g;e++)d.createElement(f[e]);return d}function p(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return r.shivMethods?n(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+l().join().replace(/\w+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(r,b.frag)}function q(a){a||(a=b);var c=m(a);return r.shivCSS&&!f&&!c.hasCSS&&(c.hasCSS=!!k(a,"article,aside,figcaption,figure,footer,header,hgroup,nav,section{display:block}mark{background:#FF0;color:#000}")),j||p(a,c),a}var c=a.html5||{},d=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,e=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,f,g="_html5shiv",h=0,i={},j;(function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",f="hidden"in a,j=a.childNodes.length==1||function(){b.createElement("a");var a=b.createDocumentFragment();return typeof a.cloneNode=="undefined"||typeof a.createDocumentFragment=="undefined"||typeof a.createElement=="undefined"}()}catch(c){f=!0,j=!0}})();var r={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,supportsUnknownElements:j,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:q,createElement:n,createDocumentFragment:o};a.html5=r,q(b)}(this,b),e._version=d,e._prefixes=m,e.testStyles=t,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+q.join(" "):""),e}(this,this.document),function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))};
+</script>
 
             <style>
             body {min-width:auto;}
-            body #u24440 {height:auto;}
+            body #u16845 {height:auto;}
 
-            body #u24440 #svg1 svg path {stroke:#0729F2;fill:rgba(7,41,242, 1);stroke-width:2;stroke-miterlimit:10;}
-            body #u24440 .mt-svg-obj svg {fill-opacity: 0;transition: fill-opacity 0.5s;padding:5px;}
-            body #u24440 .mt-svg-obj.mt-svg-animation-finished svg {fill-opacity: 1;}
+            body #u16845 #svg1 svg path {stroke:#0729F2;fill:rgba(7,41,242, 1);stroke-width:2;stroke-miterlimit:10;}
+            body #u16845 .mt-svg-obj svg {fill-opacity: 0;transition: fill-opacity 0.5s;padding:5px;}
+            body #u16845 .mt-svg-obj.mt-svg-animation-finished svg {fill-opacity: 1;}
             </style>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.min.js"></script>
 		
-<style>
-.show1 {
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  -o-transform-origin: center;
-  transform-origin: center;
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #4A61F0;
-  text-align: center;
-  background-color: #000000;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 10em;
-  font-weight: 900;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 600;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #00FF00;
-  color: #FFFFFF;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 0px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #435CF4;
-  text-align: left;
-  background-color: #0E1E28;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 0px solid #000000;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #000000;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #000000;
-  color: #000000;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #435CF4;
-  text-align: left;
-  background-color: #0E1E28;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #0729F2;
-  text-align: left;
-  background-color: #000000;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
-<style>
-.box1 {
-  position: absolute;
-  top: 0px;
-  font-family: inherit;
-  float: left;
-  overflow: hidden;
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  color: #0729F2;
-  text-align: left;
-  background-color: #0E1E28;
-  font-size: 16px;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-}
-.box1 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.box1 img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -3px;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  backface-visibility: hidden;
-  object-fit: contain;
-  object-position: 50% 50%;
-  font-family: 'object-fit: contain; object-position: 50% 50%;';
-  transform-origin: center center !important;
-}
-.box1 figcaption {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  -webkit-transform: rotateY(90deg) translate(0%, -50%);
-  transform: rotateY(90deg) translate(0%, -50%);
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  z-index: 1;
-  opacity: 0;
-  padding: 0 30px;
-}
-.box1 h3,
-.box1 p {
-  line-height: 1.5;
-}
-.box1 h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: 800;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.box1 p {
-  font-size: 0.8em;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  margin: 0 0 15px;
-}
-.box1 .read-more {
-  border: 2px solid #FFFFFF;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #FFFFFF;
-  display: none;
-}
-.box1 .read-more:hover {
-  background-color: #FFFFFF;
-  color: #0E1E28;
-}
-.box1:hover img,
-.box1.hover img {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  opacity: 0;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-}
-.box1:hover figcaption,
-.box1.hover figcaption {
-  -webkit-transform: rotateY(0deg) translate(0, -50%);
-  transform: rotateY(0deg) translate(0, -50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-@media screen and (max-width: 480px) {
-.box1 {
-    font-size: 16px;
-  }
-}
-</style>
-
   <!--/*
 
 */
@@ -938,223 +257,155 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
  </head>
  <body>
 
-  <div class="breakpoint active" id="bp_infinity" data-min-width="961"><!-- responsive breakpoint node -->
-   <div class="clearfix borderbox" id="page"><!-- group -->
-    <a class="anchor_item grpelem shared_content" id="contact-form" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="contact-form_content"></a>
-    <div class="clearfix grpelem" id="ppu21901"><!-- column -->
-     <div class="clearfix colelem" id="pu21901"><!-- group -->
-      <div class="clip_frame grpelem" id="u21901"><!-- image -->
-       <img class="block temp_no_img_src" id="u21901_img" data-orig-src="images/logo%20copy.png?crc=4064069004" alt="" data-heightwidthratio="0.6797752808988764" data-image-width="178" data-image-height="121" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clearfix grpelem" id="ptop"><!-- column -->
-       <a class="anchor_item colelem shared_content" id="top" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="top_content"></a>
-       <nav class="MenuBar clearfix colelem" id="menuu12003" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- horizontal box -->
-        <div class="MenuItemContainer clearfix grpelem" id="u12004"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u12007" href="index.html#contact-form"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u12010-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Email</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u12032"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u12033" href="schedule.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u12035-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Appointment</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u12018"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u12019" href="https://www.messenger.com/t/1707950635943974" target="_blank"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u12022-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Meet Our Bot</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u12011"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u12014" href="brochure.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u12015-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Brochure</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u12025"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u12026" href="index.html#faqs"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u12028-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>FAQs</p></div></a>
-        </div>
-       </nav>
-      </div>
+  <div class="clearfix borderbox" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu16806"><!-- group -->
+     <div class="clip_frame grpelem" id="u16806"><!-- image -->
+      <img class="block" id="u16806_img" src="../images/logo%20copy89x61.png?crc=3912194788" alt="" data-heightwidthratio="0.6741573033707865" data-image-width="89" data-image-height="60"/>
      </div>
-     <div class="browser_width colelem" id="u11402-bw">
-      <div class="museBGSize" id="u11402"><!-- column -->
-       <div class="clearfix" id="u11402_align_to_page">
-        <div class="clearfix colelem" id="pu11478"><!-- group -->
-         <div class="grpelem" id="u11478"><!-- simple frame -->
-          <div class="fluid_height_spacer"></div>
-         </div>
-         <div class="clearfix grpelem" id="u11479-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-          <p id="u11479-2"><span class="Character-Style" id="u11479">Learn more now</span></p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu11493"><!-- group -->
-         <a class="nonblock nontext grpelem" id="u11493" href="start.html"><!-- simple frame --><div class="fluid_height_spacer"></div></a>
-         <a class="nonblock nontext clearfix grpelem" id="u11494-4" href="start.html" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p><span id="u11494">Start</span></p></a>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu24075"><!-- group -->
-      <div class="clip_frame grpelem" id="u24075"><!-- image -->
-       <img class="block temp_no_img_src" id="u24075_img" data-orig-src="images/phoneconvoll-crop-u24075.png?crc=4072811601" alt="" data-heightwidthratio="1.6549450549450548" data-image-width="455" data-image-height="753" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clip_frame grpelem" id="u23817"><!-- image -->
-       <img class="block temp_no_img_src" id="u23817_img" data-orig-src="images/adobe%20muse%20ccscreensnapz002.jpg?crc=4073729786" alt="" data-heightwidthratio="1.1071932299012694" data-image-width="709" data-image-height="785" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u11539-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>What can I do with a bot?</p>
-     </div>
-     <div class="clearfix colelem" id="pu11584"><!-- group -->
-      <div class="size_fluid_width_height grpelem" id="u11584" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/customerservice3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Customer Service</h3>
-  <p>No matter if you are solving for an instant and efficient way to answer FAQs, perform customer surveys, create/maintain a rewards program or schedule meetings/appointments; a chatbot can be customized to do them all and more.  A chatbot can help with minimizing the time you and your employees have to spend performing these tasks.  Being instant and 24/7/365, a chatbot not only is an extension of you and your employees but in reality adds another helper to your business.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
+     <a class="anchor_item grpelem" id="top" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
+     <div class="size_fixed grpelem" id="u16805" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
+      
+<div class="container">
+  <ul id="gn-menu" class="gn-menu-main">
+    <li class="gn-trigger">
+      <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+      <nav class="gn-menu-wrapper">
+        <div class="gn-scroller">
+          <ul id="rsm" class="gn-menu">
+          </ul>
+        </div><!-- /gn-scroller -->
+      </nav>
+    </li>
+  </ul>
+</div>
 
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u11577" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/3newsletters3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for information and content</h3>
-  <p>If you looking for a new way to deliver your newsletters, announcements and other materials that you depend on to drive new customers and create retention with current customers; you should consider a customized chatbot.  Why?  Chatbots are delivering a higher engagement from open rates, to clicks, to returned usage when compared to certain methods like email.  Chatbots enable you to deliver your content in a fresh way that isn't stagnant and can create personalized user experiences.  
-</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u11570" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/advertising3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Marketing and Advertising</h3>
-  <p>The benefit of customized chatbots in regards to marketing and advertising is the personalized experience you can create based on what type of engagment people have with your bot.  With the ability to aggregate and segment your audience, you will be able to deliver relevant information to your future customers based on their own feedback.  They will be able to tell the chatbot what they care about and the chatbot will deliver the content based on what they said.  Additionally you will receive the interaction data with your chatbot that will give you insights into what your current and future customers want more of and what they care about.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u11549" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/4selling2.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for E-Commerce</h3>
-  <p>Whether you have a store front or an e-commerce focus, chatbots assist you with selling more of what you have.  Promoting products, announcing new promotions, selling online within the chatbot, driving in store traffic...chabots can be customized to help you sell more product and services.  All automated and instant, a chatbot is always selling.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
      </div>
-     <div class="clearfix colelem" id="u11623-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>And So Much More!</p>
+    </div>
+    <div class="clearfix colelem" id="pu16803"><!-- group -->
+     <div class="clip_frame grpelem" id="u16803"><!-- image -->
+      <img class="block" id="u16803_img" src="../images/man-using-his-iphone-6-on-a-sofa-picjumbo-com381x176.jpg?crc=4142955829" alt="" data-heightwidthratio="0.46194225721784776" data-image-width="381" data-image-height="176"/>
      </div>
-     <div class="clearfix colelem" id="pu11633"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u11633"><!-- image -->
-       <img class="block temp_no_img_src" id="u11633_img" data-orig-src="images/moreleads-crop-u11633.png?crc=208457685" alt="" data-heightwidthratio="0.9884057971014493" data-image-width="345" data-image-height="341" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u11635"><!-- image -->
-       <img class="block temp_no_img_src" id="u11635_img" data-orig-src="images/classify.png?crc=115708903" alt="" data-heightwidthratio="1.0089020771513353" data-image-width="337" data-image-height="340" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u11637"><!-- image -->
-       <img class="block temp_no_img_src" id="u11637_img" data-orig-src="images/autopilot.png?crc=4151669058" alt="" data-heightwidthratio="1.0089020771513353" data-image-width="337" data-image-height="340" src="images/blank.gif?crc=4208392903"/>
-      </div>
+     <div class="grpelem" id="u16809"><!-- simple frame --></div>
+     <div class="clearfix grpelem" id="u16810-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+      <p>Learn more now</p>
      </div>
-     <div class="clearfix colelem" id="pu11639"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u11639"><!-- image -->
-       <img class="block temp_no_img_src" id="u11639_img" data-orig-src="images/relaxed.png?crc=3925689205" alt="" data-heightwidthratio="1.0090361445783131" data-image-width="332" data-image-height="335" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u11641"><!-- image -->
-       <img class="block temp_no_img_src" id="u11641_img" data-orig-src="images/fastercom.png?crc=346919869" alt="" data-heightwidthratio="1.0089020771513353" data-image-width="337" data-image-height="340" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clip_frame grpelem" id="u11722"><!-- image -->
-       <img class="block temp_no_img_src" id="u11722_img" data-orig-src="images/logo%20copy2.png?crc=4128809081" alt="" data-heightwidthratio="0.6772616136919315" data-image-width="409" data-image-height="277" src="images/blank.gif?crc=4208392903"/>
-      </div>
+     <a class="nonblock nontext grpelem" id="u16811" href="start.html"><!-- simple frame --></a>
+     <a class="nonblock nontext clearfix grpelem" id="u16812-4" href="start.html" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p><span id="u16812">Start</span></p></a>
+    </div>
+    <div class="clip_frame colelem" id="u23866"><!-- image -->
+     <img class="block" id="u23866_img" src="../images/adobe%20muse%20ccscreensnapz002348x385.jpg?crc=3942697153" alt="" data-heightwidthratio="1.1063218390804597" data-image-width="348" data-image-height="385"/>
+    </div>
+    <div class="clip_frame colelem" id="u16813"><!-- image -->
+     <img class="block" id="u16813_img" src="../images/screen%20shot%202018-01-24%20at%2023232%20pm.jpg?crc=3907291106" alt="" data-heightwidthratio="1.864864864864865" data-image-width="185" data-image-height="345"/>
+    </div>
+    <div class="clearfix colelem" id="u16817-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>What can I do with a bot?</p>
+    </div>
+    <div class="clip_frame colelem" id="u25682"><!-- image -->
+     <img class="block" id="u25682_img" src="../images/4selling.jpg?crc=4144521146" alt="" data-heightwidthratio="1.7767441860465116" data-image-width="215" data-image-height="382"/>
+    </div>
+    <div class="clip_frame colelem" id="u25732"><!-- image -->
+     <img class="block" id="u25732_img" src="../images/advertising.jpg?crc=33270916" alt="" data-heightwidthratio="1.7720930232558139" data-image-width="215" data-image-height="381"/>
+    </div>
+    <div class="clip_frame colelem" id="u25712"><!-- image -->
+     <img class="block" id="u25712_img" src="../images/3newsletters.jpg?crc=20465691" alt="" data-heightwidthratio="1.7720930232558139" data-image-width="215" data-image-height="381"/>
+    </div>
+    <div class="clip_frame colelem" id="u25702"><!-- image -->
+     <img class="block" id="u25702_img" src="../images/customerservice.jpg?crc=4247782623" alt="" data-heightwidthratio="1.7757009345794392" data-image-width="214" data-image-height="380"/>
+    </div>
+    <div class="clearfix colelem" id="u16823-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>And So Much More!</p>
+    </div>
+    <div class="clearfix colelem" id="pu16824"><!-- group -->
+     <div class="show1 clip_frame grpelem" id="u16824"><!-- image -->
+      <img class="block" id="u16824_img" src="../images/moreleads202x204.png?crc=3764729124" alt="" data-heightwidthratio="1.00990099009901" data-image-width="202" data-image-height="204"/>
      </div>
-     <div class="clearfix colelem" id="pu11643"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u11643"><!-- image -->
-       <img class="block temp_no_img_src" id="u11643_img" data-orig-src="images/distribute.png?crc=211539898" alt="" data-heightwidthratio="1.008955223880597" data-image-width="335" data-image-height="338" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u11645"><!-- image -->
-       <img class="block temp_no_img_src" id="u11645_img" data-orig-src="images/engage.png?crc=145375232" alt="" data-heightwidthratio="1.008955223880597" data-image-width="335" data-image-height="338" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u11647"><!-- image -->
-       <img class="block temp_no_img_src" id="u11647_img" data-orig-src="images/reach.png?crc=4257290876" alt="" data-heightwidthratio="1.008849557522124" data-image-width="339" data-image-height="342" src="images/blank.gif?crc=4208392903"/>
-      </div>
+     <div class="show1 clip_frame grpelem" id="u16826"><!-- image -->
+      <img class="block" id="u16826_img" src="../images/classify190x192.png?crc=290051503" alt="" data-heightwidthratio="1.0105820105820107" data-image-width="189" data-image-height="191"/>
      </div>
-     <div class="clearfix colelem" id="pu20943-5"><!-- group -->
-      <div class="clearfix grpelem shared_content" id="u20943-5" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-content-guid="u20943-5_content"><!-- content -->
-       <p>Click our Bot</p>
-       <p>&nbsp;</p>
-      </div>
-      <div class="clearfix grpelem shared_content" id="u20960-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-content-guid="u20960-4_content"><!-- content -->
-       <p>to see how it works</p>
-      </div>
-      <a class="nonblock nontext clip_frame grpelem" id="u20923" href="https://www.messenger.com/t/1707950635943974" target="_blank"><!-- image --><img class="block temp_no_img_src" id="u20923_img" data-orig-src="images/logo%20copy2.png?crc=4128809081" alt="" data-heightwidthratio="0.6775862068965517" data-image-width="580" data-image-height="393" src="images/blank.gif?crc=4208392903"/></a>
+    </div>
+    <div class="show1 clip_frame colelem" id="u16828"><!-- image -->
+     <img class="block" id="u16828_img" src="../images/autopilot157x158.png?crc=4048343440" alt="" data-heightwidthratio="1.0128205128205128" data-image-width="156" data-image-height="158"/>
+    </div>
+    <div class="show1 clip_frame colelem" id="u16830"><!-- image -->
+     <img class="block" id="u16830_img" src="../images/relaxed155x157.png?crc=30832184" alt="" data-heightwidthratio="1.0064516129032257" data-image-width="155" data-image-height="156"/>
+    </div>
+    <div class="show1 clip_frame colelem" id="u16832"><!-- image -->
+     <img class="block" id="u16832_img" src="../images/fastercom167x168.png?crc=3858548766" alt="" data-heightwidthratio="1.0120481927710843" data-image-width="166" data-image-height="168"/>
+    </div>
+    <div class="clearfix colelem" id="pcontact-form"><!-- group -->
+     <a class="anchor_item grpelem" id="contact-form" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
+     <div class="show1 clip_frame grpelem" id="u16836"><!-- image -->
+      <img class="block" id="u16836_img" src="../images/distribute161x162.png?crc=508163132" alt="" data-heightwidthratio="1.0125" data-image-width="160" data-image-height="162"/>
      </div>
-     <div class="clearfix colelem" id="pu11749"><!-- group -->
-      <div class="grpelem" id="u11749"><!-- simple frame -->
-       <div class="fluid_height_spacer"></div>
-      </div>
-      <form class="form-grp clearfix grpelem" id="widgetu11750" method="post" enctype="multipart/form-data" action="scripts/form-u11750.php" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- none box -->
-       <div class="fld-grp clearfix grpelem" id="widgetu11751" data-required="true" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
-        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11753-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><div id="u11753-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu11751_input" name="custom_U11751" tabindex="2" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu11751_prompt" for="widgetu11751_input"><span class="actAsPara">Enter Name</span></label></div></span>
-        <label class="fld-label actAsDiv clearfix grpelem" id="u11752-4" for="widgetu11751_input" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><span class="actAsPara">*Name:</span></label>
+     <div class="show1 clip_frame grpelem" id="u16834"><!-- image -->
+      <img class="block" id="u16834_img" src="../images/engage149x151.png?crc=3775925503" alt="" data-heightwidthratio="1.0135135135135136" data-image-width="148" data-image-height="150"/>
+     </div>
+     <div class="show1 clip_frame grpelem" id="u16838"><!-- image -->
+      <img class="block" id="u16838_img" src="../images/reach146x147.png?crc=4290937406" alt="" data-heightwidthratio="1.0068493150684932" data-image-width="146" data-image-height="147"/>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu17490"><!-- group -->
+     <div class="browser_width grpelem" id="u17490-bw">
+      <div id="u17490"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="u17491-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+      <p>Contact Us</p>
+     </div>
+     <form class="form-grp clearfix grpelem" id="widgetu17492" method="post" enctype="multipart/form-data" action="../scripts/form-u17492.php"><!-- none box -->
+      <div class="clearfix grpelem" id="pwidgetu17513"><!-- column -->
+       <div class="fld-grp clearfix colelem" id="widgetu17513" data-required="true"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u17514-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu17513_input"><!-- content --><span class="actAsPara">*Name:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u17515-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u17515-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu17513_input" name="custom_U17513" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu17513_prompt" for="widgetu17513_input"><span class="actAsPara">Enter Name</span></label></div></span>
        </div>
-       <div class="fld-grp clearfix grpelem" id="widgetu11771" data-required="true" data-type="email" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
-        <label class="fld-label actAsDiv clearfix grpelem" id="u11774-4" for="widgetu11771_input" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><span class="actAsPara">*Email:</span></label>
-        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11773-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><div id="u11773-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu11771_input" name="Email" tabindex="3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu11771_prompt" for="widgetu11771_input"><span class="actAsPara">Enter Email</span></label></div></span>
+       <div class="fld-grp clearfix colelem" id="widgetu17504" data-required="true" data-type="email"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u17507-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu17504_input"><!-- content --><span class="actAsPara">*Email:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u17506-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u17506-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu17504_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu17504_prompt" for="widgetu17504_input"><span class="actAsPara">Enter Email</span></label></div></span>
        </div>
-       <div class="clearfix grpelem" id="u11760-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-        <p><span>Submitting Form...</span></p>
+       <div class="fld-grp clearfix colelem" id="widgetu17499" data-required="true"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u17500-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu17499_input"><!-- content --><span class="actAsPara">*Cell Phone:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u17502-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u17502-3"><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu17499_input" name="custom_U17499" tabindex="3"/><label class="wrapped-input fld-prompt" id="widgetu17499_prompt" for="widgetu17499_input"><span class="actAsPara">Enter Phone Number</span></label></div></span>
        </div>
-       <div class="clearfix grpelem" id="u11770-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-        <p><span>The server encountered an error.</span></p>
+       <div class="fld-grp clearfix colelem" id="widgetu17495" data-required="false"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u17496-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu17495_input"><!-- content --><span class="actAsPara">Company:</span></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u17498-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u17498-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu17495_input" name="custom_U17495" tabindex="4"/><label class="wrapped-input fld-prompt" id="widgetu17495_prompt" for="widgetu17495_input"><span class="actAsPara">Enter Company</span></label></div></span>
        </div>
-       <div class="clearfix grpelem" id="u11759-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-        <p>Got it!</p>
+       <div class="fld-grp clearfix colelem" id="widgetu17508" data-required="false"><!-- none box -->
+        <label class="fld-label actAsDiv clearfix colelem" id="u17509-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu17508_input"><!-- content --><span class="actAsPara">Message:</span></label>
+        <span class="fld-textarea actAsDiv clearfix colelem" id="u17510-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u17510-3"><textarea class="wrapped-input" id="widgetu17508_input" name="custom_U17508" tabindex="5"></textarea><label class="wrapped-input fld-prompt" id="widgetu17508_prompt" for="widgetu17508_input"><span class="actAsPara">Enter Your Message</span></label></div></span>
        </div>
-       <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u11769-4" type="submit" value="Submit" tabindex="6" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+       <button class="submit-btn NoWrap rounded-corners clearfix colelem" id="u17503-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" type="submit" value="Submit" tabindex="6"><!-- content -->
         <div style="margin-top:-19px;height:19px;">
          <p>Submit</p>
         </div>
        </button>
-       <div class="fld-grp clearfix grpelem" id="widgetu11755" data-required="false" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
-        <label class="fld-label actAsDiv clearfix grpelem" id="u11756-4" for="widgetu11755_input" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><span class="actAsPara">Message:</span></label>
-        <span class="fld-textarea actAsDiv clearfix grpelem" id="u11757-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><div id="u11757-3"><textarea class="wrapped-input" id="widgetu11755_input" name="custom_U11755" tabindex="1" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></textarea><label class="wrapped-input fld-prompt" id="widgetu11755_prompt" for="widgetu11755_input"><span class="actAsPara">Enter Your Message</span></label></div></span>
-       </div>
-       <div class="fld-grp clearfix grpelem" id="widgetu11765" data-required="true" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
-        <label class="fld-label actAsDiv clearfix grpelem" id="u11767-4" for="widgetu11765_input" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><span class="actAsPara">*Cell Phone:</span></label>
-        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11766-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><div id="u11766-3"><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu11765_input" name="custom_U11765" tabindex="4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu11765_prompt" for="widgetu11765_input"><span class="actAsPara">Enter Phone Number</span></label></div></span>
-       </div>
-       <div class="fld-grp clearfix grpelem" id="widgetu11761" data-required="false" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
-        <label class="fld-label actAsDiv clearfix grpelem" id="u11762-4" for="widgetu11761_input" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><span class="actAsPara">Company:</span></label>
-        <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u11764-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><div id="u11764-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu11761_input" name="custom_U11761" tabindex="5" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu11761_prompt" for="widgetu11761_input"><span class="actAsPara">Enter Company</span></label></div></span>
-       </div>
-      </form>
-      <div class="clearfix grpelem" id="u11888-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Contact Us</p>
       </div>
-     </div>
-     <a class="anchor_item colelem shared_content" id="faqs" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="faqs_content"></a>
-     <div class="clearfix colelem" id="u11902-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>FAQs</p>
-     </div>
-     <div class="colelem" id="u11903"><!-- simple frame --></div>
-     <div class="colelem" id="u23187"><!-- custom html -->
+      <div class="clearfix grpelem" id="pu17494-4"><!-- group -->
+       <div class="clearfix grpelem" id="u17494-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+        <p><span>Submitting Form...</span></p>
+       </div>
+       <div class="clearfix grpelem" id="u17512-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+        <p><span>The server encountered an error.</span></p>
+       </div>
+       <div class="clearfix grpelem" id="u17493-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+        <p>Got it!</p>
+       </div>
+      </div>
+     </form>
+    </div>
+    <a class="anchor_item colelem" id="faqs" data-sizePolicy="fixed" data-pintopage="page_fluidx"></a>
+    <div class="clearfix colelem" id="pu16840"><!-- group -->
+     <div class="grpelem" id="u16840"><!-- custom html -->
       <script src="//www.powr.io/powr.js?external-type=html"></script> 
  <div class="powr-faq" id="238943e0_1516401619"></div>
      </div>
-     <div class="clearfix colelem" id="pu24655"><!-- group -->
-      <div class="clearfix grpelem" id="u24655"><!-- group -->
-       <div class="clearfix grpelem shared_content" id="u24454" data-content-guid="u24454_content"><!-- group -->
-        <a class="nonblock nontext anim_swing size_fluid_width grpelem shared_content" id="u24440" href="index.html#top" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx" data-content-guid="u24440_content"><!-- custom html -->
+     <a class="nonblock nontext anim_swing size_fluid_width grpelem" id="u16845" href="index.html#top" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- custom html -->
             <div id="svg1" class="mt-svg-obj mt-on-mouseenter"></div>
             <script>
-                var svgu24440 = new Vivus('svg1', {
-                    file: 'assets/newface2.svg',
-                    type: 'async',
+                var svgu16845 = new Vivus('svg1', {
+                    file: '../assets/newface.svg',
+                    type: 'oneByOne',
                     start: 'autostart',
                     duration: 200,
                     delay: 50,
@@ -1166,538 +417,29 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
                 });
             </script>
         </a>
-       </div>
-      </div>
-      <a class="nonblock nontext anim_swing clearfix grpelem" id="u24742-4" href="index.html#top" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p>Back to Top</p></a>
-     </div>
-     <div class="clearfix colelem" id="pu11968"><!-- group -->
-      <div class="clip_frame grpelem" id="u11968"><!-- image -->
-       <img class="block temp_no_img_src" id="u11968_img" data-orig-src="images/screen%20shot%202018-01-24%20at%2032006%20pm.jpg?crc=3900761671" alt="" data-heightwidthratio="0.3444924406047516" data-image-width="926" data-image-height="319" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <a class="nonblock nontext grpelem shared_content" id="u19844" href="schedule.html" data-content-guid="u19844_content"><!-- simple frame --></a>
-      <a class="nonblock nontext grpelem shared_content" id="u19850" href="brochure.html" data-content-guid="u19850_content"><!-- simple frame --></a>
-      <a class="nonblock nontext grpelem shared_content" id="u19856" href="https://www.messenger.com/t/1707950635943974" target="_blank" data-content-guid="u19856_content"><!-- simple frame --></a>
-      <a class="nonblock nontext grpelem shared_content" id="u19880" href="tel:6018502625" data-content-guid="u19880_content"><!-- simple frame --></a>
-      <div class="grpelem shared_content" id="u19886" data-content-guid="u19886_content"><!-- simple frame --></div>
-      <a class="nonblock nontext grpelem shared_content" id="u19892" href="https://www.messenger.com/t/1707950635943974" target="_blank" data-content-guid="u19892_content"><!-- simple frame --></a>
-      <a class="nonblock nontext grpelem shared_content" id="u19898" href="https://www.facebook.com/BotsWelcomed/" data-content-guid="u19898_content"><!-- simple frame --></a>
-      <a class="nonblock nontext anim_swing grpelem shared_content" id="u19868" href="index.html#faqs" data-content-guid="u19868_content"><!-- simple frame --></a>
-      <a class="nonblock nontext anim_swing grpelem shared_content" id="u19838" href="index.html#contact-form" data-content-guid="u19838_content"><!-- simple frame --></a>
-     </div>
-     <div class="clearfix colelem" id="pu11984-4"><!-- group -->
-      <div class="clearfix grpelem" id="u11984-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Owned and Operated in Rankin County, MS</p>
-      </div>
-      <div class="clearfix grpelem" id="u11985-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Bots Welcomed is the trading name for What If Solutions, LLC</p>
-      </div>
-     </div>
+     <a class="nonblock nontext anim_swing clearfix grpelem" id="u16846-4" href="index.html#top" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p>Back to Top</p></a>
     </div>
-    <div class="clearfix grpelem shared_content" id="u24486-3" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-content-guid="u24486-3_content"><!-- content -->
-     <p>&nbsp;</p>
+    <div class="clearfix colelem" id="pu16841"><!-- group -->
+     <div class="clip_frame grpelem" id="u16841"><!-- image -->
+      <img class="block" id="u16841_img" src="../images/screen%20shot%202018-01-24%20at%2032006%20pm350x121.jpg?crc=474384617" alt="" data-heightwidthratio="0.3457142857142857" data-image-width="350" data-image-height="121"/>
+     </div>
+     <a class="nonblock nontext anim_swing grpelem" id="u20049" href="index.html#contact-form"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u20052" href="schedule.html"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u20055" href="https://www.messenger.com/t/1707950635943974"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u20058" href="brochure.html"><!-- simple frame --></a>
+     <a class="nonblock nontext anim_swing grpelem" id="u20061" href="index.html#faqs"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u20064" href="tel:6018502625"><!-- simple frame --></a>
+     <div class="grpelem" id="u20067"><!-- simple frame --></div>
+     <a class="nonblock nontext grpelem" id="u20070" href="https://www.messenger.com/t/1707950635943974"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u20073" href="https://www.facebook.com/BotsWelcomed/"><!-- simple frame --></a>
     </div>
-    <div class="verticalspacer" data-offset-top="7033" data-content-above-spacer="7033" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_960" data-min-width="651" data-max-width="960"><!-- responsive breakpoint node -->
-   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <div class="clearfix grpelem" id="pu12837"><!-- column -->
-     <div class="size_fixed colelem" id="u12837" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-      
-
-     </div>
-     <div class="size_fixed colelem" id="u12793" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-      
-
-     </div>
-     <span class="anchor_item colelem placeholder" data-placeholder-for="contact-form_content"><!-- placeholder node --></span>
-     <span class="anchor_item colelem placeholder" data-placeholder-for="faqs_content"><!-- placeholder node --></span>
+    <div class="clearfix colelem" id="u16844-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>Bots Welcomed is the trading name for What If Solutions</p>
     </div>
-    <div class="clearfix grpelem" id="ppu21931"><!-- column -->
-     <div class="clearfix colelem" id="pu21931"><!-- group -->
-      <div class="clip_frame grpelem" id="u21931"><!-- image -->
-       <img class="block temp_no_img_src" id="u21931_img" data-orig-src="images/logo%20copy.png?crc=4064069004" alt="" data-heightwidthratio="0.6774193548387096" data-image-width="186" data-image-height="126" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clearfix grpelem temp_no_id" data-orig-id="ptop"><!-- column -->
-       <span class="anchor_item colelem placeholder" data-placeholder-for="top_content"><!-- placeholder node --></span>
-       <nav class="MenuBar clearfix colelem" id="menuu20481" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- horizontal box -->
-        <div class="MenuItemContainer clearfix grpelem" id="u20482"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u20483" href="index.html#contact-form"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u20486-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Email</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u20496"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u20499" href="schedule.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u20500-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Appointment</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u20489"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u20492" href="https://www.messenger.com/t/1707950635943974" target="_blank"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u20494-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Meet Our Bot</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u20503"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u20504" href="brochure.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u20506-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Brochure</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u20510"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u20511" href="index.html#faqs"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u20512-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>FAQs</p></div></a>
-        </div>
-       </nav>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu7083"><!-- group -->
-      <div class="museBGSize grpelem" id="u7083"><!-- simple frame -->
-       <div class="fluid_height_spacer"></div>
-      </div>
-      <div class="museBGSize grpelem" id="u12721"><!-- simple frame -->
-       <div class="fluid_height_spacer"></div>
-      </div>
-      <div class="clearfix grpelem" id="u12722"><!-- group -->
-       <div class="grpelem" id="u12724"><!-- simple frame --></div>
-       <div class="clearfix grpelem" id="u12723-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-        <p>Learn more now</p>
-       </div>
-      </div>
-      <div class="clearfix grpelem" id="u12725"><!-- group -->
-       <a class="nonblock nontext grpelem" id="u12726" href="start.html"><!-- simple frame --></a>
-       <a class="nonblock nontext clearfix grpelem" id="u12727-4" href="start.html" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p><span id="u12727">Start</span></p></a>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu12764"><!-- group -->
-      <div class="clip_frame grpelem" id="u12764"><!-- image -->
-       <img class="block temp_no_img_src" id="u12764_img" data-orig-src="images/phoneconvolsmall-crop-u12764.png?crc=21918984" alt="" data-heightwidthratio="1.8632218844984803" data-image-width="329" data-image-height="613" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clip_frame grpelem" id="u23843"><!-- image -->
-       <img class="block temp_no_img_src" id="u23843_img" data-orig-src="images/adobe%20muse%20ccscreensnapz002.jpg?crc=4073729786" alt="" data-heightwidthratio="1.1065292096219932" data-image-width="582" data-image-height="644" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u12728-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>What can I do with a bot?</p>
-     </div>
-     <div class="clearfix colelem" id="pu12832"><!-- group -->
-      <div class="size_fluid_width_height grpelem" id="u12832" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/4selling3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for E-Commerce</h3>
-  <p>Whether you have a store front or an e-commerce focus, chatbots assist you with selling more of what you have.  Promoting products, announcing new promotions, selling online within the chatbot, driving in store traffic...chabots can be customized to help you sell more product and services.  All automated and instant, a chatbot is always selling.</p><a href="#anchor" target="_self" class="read-more">Try our E-commerce Bot</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u12830" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/advertising3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Marketing and Advertising</h3>
-  <p>The benefit of customized chatbots in regards to marketing and advertising is the personalized experience you can create based on what type of engagment people have with your bot.  With the ability to aggregate and segment your audience, you will be able to deliver relevant information to your future customers based on their own feedback.  They will be able to tell the chatbot what they care about and the chatbot will deliver the content based on what they said.  Additionally you will receive the interaction data with your chatbot that will give you insights into what your current and future customers want more of and what they care about.</p><a href="#anchor" target="_self" class="read-more"></a>
-</figcaption>
-</figure>
-
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu12833"><!-- group -->
-      <div class="size_fluid_width_height grpelem" id="u12833" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/3newsletters3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for information and content</h3>
-  <p>If you looking for a new way to deliver your newsletters, announcements and other materials that you depend on to drive new customers and create retention with current customers; you should consider a customized chatbot.  Why?  Chatbots are delivering a higher engagement from open rates, to clicks, to returned usage when compared to certain methods like email.  Chatbots enable you to deliver your content in a fresh way that isn't stagnant and can create personalized user experiences.  
-</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fluid_width_height grpelem" id="u12831" data-sizePolicy="fluidWidthHeight" data-pintopage="page_fluidx"><!-- custom html -->
-       <div class="fluid_height_spacer"></div>
-       
-<figure class="box1">
-<img src="assets/customerservice3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Customer Service</h3>
-  <p>No matter if you are solving for an instant and efficient way to answer FAQs, perform customer surveys, create/maintain a rewards program or schedule meetings/appointments; a chatbot can be customized to do them all and more.  A chatbot can help with minimizing the time you and your employees have to spend performing these tasks.  Being instant and 24/7/365, a chatbot not only is an extension of you and your employees but in reality adds another helper to your business.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u12729-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>And So Much More!</p>
-     </div>
-     <div class="clearfix colelem" id="pu12769"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u12769"><!-- image -->
-       <img class="block temp_no_img_src" id="u12769_img" data-orig-src="images/moreleads.png?crc=4072240562" alt="" data-heightwidthratio="1.0108303249097472" data-image-width="277" data-image-height="280" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u12771"><!-- image -->
-       <img class="block temp_no_img_src" id="u12771_img" data-orig-src="images/classify.png?crc=115708903" alt="" data-heightwidthratio="1.0107913669064748" data-image-width="278" data-image-height="281" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu12773"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u12773"><!-- image -->
-       <img class="block temp_no_img_src" id="u12773_img" data-orig-src="images/autopilot.png?crc=4151669058" alt="" data-heightwidthratio="1.0107142857142857" data-image-width="280" data-image-height="283" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u12775"><!-- image -->
-       <img class="block temp_no_img_src" id="u12775_img" data-orig-src="images/relaxed.png?crc=3925689205" alt="" data-heightwidthratio="1.010948905109489" data-image-width="274" data-image-height="277" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu12777"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u12777"><!-- image -->
-       <img class="block temp_no_img_src" id="u12777_img" data-orig-src="images/fastercom.png?crc=346919869" alt="" data-heightwidthratio="1.0107913669064748" data-image-width="278" data-image-height="281" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u12779"><!-- image -->
-       <img class="block temp_no_img_src" id="u12779_img" data-orig-src="images/distribute.png?crc=211539898" alt="" data-heightwidthratio="1.0108303249097472" data-image-width="277" data-image-height="280" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu12781"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u12781"><!-- image -->
-       <img class="block temp_no_img_src" id="u12781_img" data-orig-src="images/engage.png?crc=145375232" alt="" data-heightwidthratio="1.0108303249097472" data-image-width="277" data-image-height="280" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u12784"><!-- image -->
-       <img class="block temp_no_img_src" id="u12784_img" data-orig-src="images/reach.png?crc=4257290876" alt="" data-heightwidthratio="1.0107142857142857" data-image-width="280" data-image-height="283" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu20943-5"><!-- group -->
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u20943-5_content"><!-- placeholder node --></span>
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u20960-4_content"><!-- placeholder node --></span>
-      <a class="nonblock nontext clip_frame grpelem temp_no_id" href="https://www.messenger.com/t/1707950635943974" target="_blank" data-orig-id="u20923"><!-- image --><img class="block temp_no_id temp_no_img_src" data-orig-src="images/logo%20copy2.png?crc=4128809081" alt="" data-heightwidthratio="0.6768867924528302" data-image-width="424" data-image-height="287" data-orig-id="u20923_img" src="images/blank.gif?crc=4208392903"/></a>
-     </div>
-     <div class="clearfix colelem" id="pu12731"><!-- group -->
-      <div class="grpelem" id="u12731"><!-- simple frame -->
-       <div class="fluid_height_spacer"></div>
-      </div>
-      <form class="form-grp clearfix grpelem" id="widgetu12733" method="post" enctype="multipart/form-data" action="scripts/form-u12733.php"><!-- none box -->
-       <div class="position_content" id="widgetu12733_position_content">
-        <div class="clearfix colelem" id="ppwidgetu12739"><!-- group -->
-         <div class="clearfix grpelem" id="pwidgetu12739"><!-- column -->
-          <div class="fld-grp clearfix colelem" id="widgetu12739" data-required="true"><!-- none box -->
-           <label class="fld-label actAsDiv clearfix colelem" id="u12741-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu12739_input"><!-- content --><span class="actAsPara">*Name:</span></label>
-           <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u12742-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u12742-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu12739_input" name="custom_U12739" tabindex="7"/><label class="wrapped-input fld-prompt" id="widgetu12739_prompt" for="widgetu12739_input"><span class="actAsPara">Enter Name</span></label></div></span>
-          </div>
-          <div class="fld-grp clearfix colelem" id="widgetu12748" data-required="true" data-type="email"><!-- none box -->
-           <label class="fld-label actAsDiv clearfix colelem" id="u12749-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu12748_input"><!-- content --><span class="actAsPara">*Email:</span></label>
-           <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u12751-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u12751-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu12748_input" name="Email" tabindex="9"/><label class="wrapped-input fld-prompt" id="widgetu12748_prompt" for="widgetu12748_input"><span class="actAsPara">Enter Email</span></label></div></span>
-          </div>
-          <div class="fld-grp clearfix colelem" id="widgetu12744" data-required="true"><!-- none box -->
-           <label class="fld-label actAsDiv clearfix colelem" id="u12746-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu12744_input"><!-- content --><span class="actAsPara">*Cell Phone:</span></label>
-           <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u12745-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u12745-3"><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu12744_input" name="custom_U12744" tabindex="10"/><label class="wrapped-input fld-prompt" id="widgetu12744_prompt" for="widgetu12744_input"><span class="actAsPara">Enter Phone Number</span></label></div></span>
-          </div>
-         </div>
-         <div class="fld-grp clearfix grpelem" id="widgetu12752" data-required="false"><!-- none box -->
-          <label class="fld-label actAsDiv clearfix colelem" id="u12755-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu12752_input"><!-- content --><span class="actAsPara">Message:</span></label>
-          <span class="fld-textarea actAsDiv clearfix colelem" id="u12753-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u12753-3"><textarea class="wrapped-input" id="widgetu12752_input" name="custom_U12752" tabindex="8"></textarea><label class="wrapped-input fld-prompt" id="widgetu12752_prompt" for="widgetu12752_input"><span class="actAsPara">Enter Your Message</span></label></div></span>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu12757-4"><!-- group -->
-         <div class="clearfix grpelem" id="u12757-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p><span>Submitting Form...</span></p>
-         </div>
-         <div class="clearfix grpelem" id="u12734-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p><span>The server encountered an error.</span></p>
-         </div>
-         <div class="clearfix grpelem" id="u12743-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p>Got it!</p>
-         </div>
-         <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u12756-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" type="submit" value="Submit" tabindex="12"><!-- content -->
-          <div style="margin-top:-19px;height:19px;">
-           <p>Submit</p>
-          </div>
-         </button>
-         <div class="fld-grp clearfix grpelem" id="widgetu12735" data-required="false"><!-- none box -->
-          <label class="fld-label actAsDiv clearfix colelem" id="u12736-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu12735_input"><!-- content --><span class="actAsPara">Company:</span></label>
-          <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u12737-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u12737-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu12735_input" name="custom_U12735" tabindex="11"/><label class="wrapped-input fld-prompt" id="widgetu12735_prompt" for="widgetu12735_input"><span class="actAsPara">Enter Company</span></label></div></span>
-         </div>
-        </div>
-       </div>
-      </form>
-      <div class="clearfix grpelem" id="u12732-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Contact Us</p>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u12759-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>FAQs</p>
-     </div>
-     <div class="colelem" id="u12792"><!-- simple frame --></div>
-     <div class="colelem" id="u23195"><!-- custom html -->
-      <script src="//www.powr.io/powr.js?external-type=html"></script> 
- <div class="powr-faq" id="238943e0_1516401619"></div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="u24655"><!-- group -->
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u24454_content"><!-- placeholder node --></span>
-      <a class="nonblock nontext anim_swing clearfix grpelem" id="u23244-4" href="index.html#top" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p>Back to Top</p></a>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu11968"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u11968"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/screen%20shot%202018-01-24%20at%2032006%20pm.jpg?crc=3900761671" alt="" data-heightwidthratio="0.34464751958224543" data-image-width="766" data-image-height="264" data-orig-id="u11968_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19844_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19850_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19856_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19880_content"><!-- placeholder node --></span>
-      <span class="grpelem placeholder" data-placeholder-for="u19886_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19892_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19898_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext anim_swing grpelem placeholder" data-placeholder-for="u19868_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext anim_swing grpelem placeholder" data-placeholder-for="u19838_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem" id="pu12762-4"><!-- group -->
-      <div class="clearfix grpelem" id="u12762-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Owned and Operated in Rankin County, MS</p>
-      </div>
-      <div class="clearfix grpelem" id="u12763-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Bots Welcomed is the trading name for What If Solutions, LLC</p>
-      </div>
-     </div>
+    <div class="clearfix colelem" id="u16843-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>Owned and Operated in Ranking County, MS</p>
     </div>
-    <span class="clearfix grpelem placeholder" data-placeholder-for="u24486-3_content"><!-- placeholder node --></span>
-    <div class="verticalspacer" data-offset-top="7781" data-content-above-spacer="7780" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-   </div>
-  </div>
-  <div class="breakpoint" id="bp_650" data-max-width="650"><!-- responsive breakpoint node -->
-   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <div class="size_fixed grpelem" id="u10882" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-     
-
-    </div>
-    <div class="clearfix grpelem" id="pu11738"><!-- column -->
-     <div class="size_fixed colelem" id="u11738" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-      
-
-     </div>
-     <span class="anchor_item colelem placeholder" data-placeholder-for="contact-form_content"><!-- placeholder node --></span>
-     <span class="anchor_item colelem placeholder" data-placeholder-for="faqs_content"><!-- placeholder node --></span>
-    </div>
-    <div class="clearfix grpelem" id="ppu21952"><!-- column -->
-     <div class="clearfix colelem" id="pu21952"><!-- group -->
-      <div class="clip_frame grpelem" id="u21952"><!-- image -->
-       <img class="block temp_no_img_src" id="u21952_img" data-orig-src="images/logo%20copy.png?crc=4064069004" alt="" data-heightwidthratio="0.6791044776119403" data-image-width="134" data-image-height="91" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clearfix grpelem temp_no_id" data-orig-id="ptop"><!-- column -->
-       <span class="anchor_item colelem placeholder" data-placeholder-for="top_content"><!-- placeholder node --></span>
-       <nav class="MenuBar clearfix colelem" id="menuu10930" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- horizontal box -->
-        <div class="MenuItemContainer clearfix grpelem" id="u10931"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u10932" href="index.html#contact-form"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u10933-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Email</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u10938"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u10939" href="schedule.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u10940-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Appointment</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u10959"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u10960" href="https://www.messenger.com/t/1707950635943974" target="_blank"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u10961-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Meet Our Bot</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u10945"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u10946" href="brochure.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u10949-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>Brochure</p></div></a>
-        </div>
-        <div class="MenuItemContainer clearfix grpelem" id="u10952"><!-- vertical box -->
-         <a class="nonblock nontext MenuItem MenuItemWithSubMenu anim_swing clearfix colelem" id="u10955" href="index.html#faqs"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u10957-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><p>FAQs</p></div></a>
-        </div>
-       </nav>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu15057"><!-- group -->
-      <div class="clip_frame grpelem" id="u15057"><!-- image -->
-       <img class="block temp_no_img_src" id="u15057_img" data-orig-src="images/man-using-his-iphone-6-on-a-sofa-picjumbo-com2.jpg?crc=520743179" alt="" data-heightwidthratio="0.46153846153846156" data-image-width="650" data-image-height="300" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="grpelem" id="u15110"><!-- simple frame --></div>
-      <div class="clearfix grpelem" id="u15111-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Learn more now</p>
-      </div>
-      <a class="nonblock nontext grpelem" id="u15130" href="start.html"><!-- simple frame --></a>
-      <a class="nonblock nontext clearfix grpelem" id="u15131-4" href="start.html" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p><span id="u15131">Start</span></p></a>
-     </div>
-     <div class="colelem" id="u7177"><!-- simple frame -->
-      <div class="fluid_height_spacer"></div>
-     </div>
-     <div class="clearfix colelem" id="pu23792"><!-- group -->
-      <div class="clip_frame grpelem" id="u23792"><!-- image -->
-       <img class="block temp_no_img_src" id="u23792_img" data-orig-src="images/adobe%20muse%20ccscreensnapz001.jpg?crc=378964955" alt="" data-heightwidthratio="1.1924198250728864" data-image-width="343" data-image-height="409" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="clip_frame grpelem" id="u15155"><!-- image -->
-       <img class="block temp_no_img_src" id="u15155_img" data-orig-src="images/phoneconvol-crop-u15155.png?crc=127963231" alt="" data-heightwidthratio="1.8609865470852018" data-image-width="223" data-image-height="415" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u15200-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>What can I do with a bot?</p>
-     </div>
-     <div class="clearfix colelem" id="pu15209"><!-- group -->
-      <div class="size_fixed grpelem" id="u15209" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-       
-<figure class="box1">
-<img src="assets/4selling3.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for E-Commerce</h3>
-  <p>Whether you have a store front or an e-commerce focus, chatbots assist you with selling more of what you have.  Promoting products, announcing new promotions, selling online within the chatbot, driving in store traffic...chabots can be customized to help you sell more product and services.  All automated and instant, a chatbot is always selling.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fixed grpelem" id="u15218" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-       
-<figure class="box1">
-<img src="assets/advertising2.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Advertising and Marketing</h3>
-  <p>The benefit of customized chatbots in regards to marketing and advertising is the personalized experience you can create based on what type of engagment people have with your bot.  With the ability to aggregate and segment your audience, you will be able to deliver relevant information to your future customers based on their own feedback.  They will be able to tell the chatbot what they care about and the chatbot will deliver the content based on what they said.  Additionally you will receive the interaction data with your chatbot that will give you insights into what your current and future customers want more of and what they care about.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu15227"><!-- group -->
-      <div class="size_fixed grpelem" id="u15227" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-       
-<figure class="box1">
-<img src="assets/3newsletters2.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for information and content</h3>
-  <p>If you looking for a new way to deliver your newsletters, announcements and other materials that you depend on to drive new customers and create retention with current customers; you should consider a customized chatbot.  Why?  Chatbots are delivering a higher engagement from open rates, to clicks, to returned usage when compared to certain methods like email.  Chatbots enable you to deliver your content in a fresh way that isn't stagnant and can create personalized user experiences.  
-</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-      <div class="size_fixed grpelem" id="u15236" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
-       
-<figure class="box1">
-<img src="assets/customerservice2.jpg" alt="alt text"/>
-<figcaption>
-  <h3>Bots for Customer Service</h3>
-  <p>No matter if you are solving for an instant and efficient way to answer FAQs, perform customer surveys, create/maintain a rewards program or schedule meetings/appointments; a chatbot can be customized to do them all and more.  A chatbot can help with minimizing the time you and your employees have to spend performing these tasks.  Being instant and 24/7/365, a chatbot not only is an extension of you and your employees but in reality adds another helper to your business.</p><a href="#anchor" target="_self" class="read-more">Read More</a>
-</figcaption>
-</figure>
-
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u15249-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>And So Much More!</p>
-     </div>
-     <div class="clearfix colelem" id="pu7178"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u7178"><!-- image -->
-       <img class="block temp_no_img_src" id="u7178_img" data-orig-src="images/moreleads218x221.png?crc=4253001261" alt="" data-heightwidthratio="1.0091743119266054" data-image-width="218" data-image-height="220" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u7180"><!-- image -->
-       <img class="block temp_no_img_src" id="u7180_img" data-orig-src="images/classify220x222.png?crc=514389167" alt="" data-heightwidthratio="1.0091324200913243" data-image-width="219" data-image-height="221" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu7182"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u7182"><!-- image -->
-       <img class="block temp_no_img_src" id="u7182_img" data-orig-src="images/autopilot221x223.png?crc=4258857084" alt="" data-heightwidthratio="1.009090909090909" data-image-width="220" data-image-height="222" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u7184"><!-- image -->
-       <img class="block temp_no_img_src" id="u7184_img" data-orig-src="images/relaxed216x218.png?crc=40355083" alt="" data-heightwidthratio="1.0092592592592593" data-image-width="216" data-image-height="218" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu7186"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u7186"><!-- image -->
-       <img class="block temp_no_img_src" id="u7186_img" data-orig-src="images/fastercom220x222.png?crc=479275497" alt="" data-heightwidthratio="1.0091324200913243" data-image-width="219" data-image-height="221" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u7188"><!-- image -->
-       <img class="block temp_no_img_src" id="u7188_img" data-orig-src="images/distribute218x221.png?crc=171432810" alt="" data-heightwidthratio="1.0091743119266054" data-image-width="218" data-image-height="220" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="pu7190"><!-- group -->
-      <div class="show1 clip_frame grpelem" id="u7190"><!-- image -->
-       <img class="block temp_no_img_src" id="u7190_img" data-orig-src="images/engage218x221.png?crc=421640969" alt="" data-heightwidthratio="1.0091743119266054" data-image-width="218" data-image-height="220" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <div class="show1 clip_frame grpelem" id="u7192"><!-- image -->
-       <img class="block temp_no_img_src" id="u7192_img" data-orig-src="images/reach221x223.png?crc=3795244290" alt="" data-heightwidthratio="1.009090909090909" data-image-width="220" data-image-height="222" src="images/blank.gif?crc=4208392903"/>
-      </div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu20943-5"><!-- group -->
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u20943-5_content"><!-- placeholder node --></span>
-      <span class="clearfix grpelem placeholder" data-placeholder-for="u20960-4_content"><!-- placeholder node --></span>
-     </div>
-     <a class="nonblock nontext clip_frame colelem temp_no_id" href="https://www.messenger.com/t/1707950635943974" target="_blank" data-orig-id="u20923"><!-- image --><img class="block temp_no_id temp_no_img_src" data-orig-src="images/logo%20copy287x195.png?crc=4253888628" alt="" data-heightwidthratio="0.6759581881533101" data-image-width="287" data-image-height="194" data-orig-id="u20923_img" src="images/blank.gif?crc=4208392903"/></a>
-     <div class="clearfix colelem" id="pu7095"><!-- group -->
-      <div class="grpelem" id="u7095"><!-- simple frame -->
-       <div class="fluid_height_spacer"></div>
-      </div>
-      <div class="clearfix grpelem" id="u7096-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Contact Us</p>
-      </div>
-      <form class="form-grp clearfix grpelem" id="widgetu7097" method="post" enctype="multipart/form-data" action="scripts/form-u7097.php"><!-- none box -->
-       <div class="clearfix grpelem" id="pwidgetu7114"><!-- column -->
-        <div class="fld-grp clearfix colelem" id="widgetu7114" data-required="true"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix colelem" id="u7117-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu7114_input"><!-- content --><span class="actAsPara">*Name:</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7115-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u7115-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu7114_input" name="custom_U7114" tabindex="13"/><label class="wrapped-input fld-prompt" id="widgetu7114_prompt" for="widgetu7114_input"><span class="actAsPara">Enter Name</span></label></div></span>
-        </div>
-        <div class="fld-grp clearfix colelem" id="widgetu7103" data-required="true" data-type="email"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix colelem" id="u7104-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu7103_input"><!-- content --><span class="actAsPara">*Email:</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7105-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u7105-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu7103_input" name="Email" tabindex="15"/><label class="wrapped-input fld-prompt" id="widgetu7103_prompt" for="widgetu7103_input"><span class="actAsPara">Enter Email</span></label></div></span>
-        </div>
-        <div class="fld-grp clearfix colelem" id="widgetu7109" data-required="true"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix colelem" id="u7111-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu7109_input"><!-- content --><span class="actAsPara">*Cell Phone:</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7112-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u7112-3"><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu7109_input" name="custom_U7109" tabindex="16"/><label class="wrapped-input fld-prompt" id="widgetu7109_prompt" for="widgetu7109_input"><span class="actAsPara">Enter Phone Number</span></label></div></span>
-        </div>
-        <div class="fld-grp clearfix colelem" id="widgetu7098" data-required="false"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix colelem" id="u7099-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu7098_input"><!-- content --><span class="actAsPara">Company:</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u7101-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u7101-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu7098_input" name="custom_U7098" tabindex="17"/><label class="wrapped-input fld-prompt" id="widgetu7098_prompt" for="widgetu7098_input"><span class="actAsPara">Enter Company</span></label></div></span>
-        </div>
-       </div>
-       <div class="clearfix grpelem" id="pwidgetu7118"><!-- column -->
-        <div class="fld-grp clearfix colelem" id="widgetu7118" data-required="false"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix colelem" id="u7120-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" for="widgetu7118_input"><!-- content --><span class="actAsPara">Message:</span></label>
-         <span class="fld-textarea actAsDiv clearfix colelem" id="u7119-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u7119-3"><textarea class="wrapped-input" id="widgetu7118_input" name="custom_U7118" tabindex="14"></textarea><label class="wrapped-input fld-prompt" id="widgetu7118_prompt" for="widgetu7118_input"><span class="actAsPara">Enter Your Message</span></label></div></span>
-        </div>
-        <button class="submit-btn NoWrap rounded-corners clearfix colelem" id="u7107-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" type="submit" value="Submit" tabindex="18"><!-- content -->
-         <div style="margin-top:-19px;height:19px;">
-          <p>Submit</p>
-         </div>
-        </button>
-        <div class="clearfix colelem" id="pu7108-4"><!-- group -->
-         <div class="clearfix grpelem" id="u7108-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p><span>Submitting Form...</span></p>
-         </div>
-         <div class="clearfix grpelem" id="u7113-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p><span>The server encountered an error.</span></p>
-         </div>
-         <div class="clearfix grpelem" id="u7102-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
-          <p>Got it!</p>
-         </div>
-        </div>
-       </div>
-      </form>
-     </div>
-     <div class="clearfix colelem" id="u7123-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>FAQs</p>
-     </div>
-     <div class="colelem" id="u10846"><!-- simple frame --></div>
-     <div class="colelem" id="u23207"><!-- custom html -->
-      <script src="//www.powr.io/powr.js?external-type=html"></script> 
- <div class="powr-faq" id="238943e0_1516401619"></div>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu24655"><!-- group -->
-      <div class="clearfix grpelem temp_no_id" data-orig-id="u24655"><!-- group -->
-       <div class="clearfix grpelem temp_no_id" data-orig-id="u24454"><!-- group -->
-        <span class="nonblock nontext anim_swing size_fluid_width grpelem placeholder" data-placeholder-for="u24440_content"><!-- placeholder node --></span>
-        <a class="nonblock nontext anim_swing clearfix grpelem" id="u24449-4" href="index.html#top" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p>Back to Top</p></a>
-       </div>
-      </div>
-      <a class="nonblock nontext anim_swing clearfix grpelem" id="u24729-4" href="index.html#top" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><p>Back to Top</p></a>
-     </div>
-     <div class="clearfix colelem temp_no_id" data-orig-id="pu11968"><!-- group -->
-      <div class="clip_frame grpelem temp_no_id" data-orig-id="u11968"><!-- image -->
-       <img class="block temp_no_id temp_no_img_src" data-orig-src="images/screen%20shot%202018-01-24%20at%2032006%20pm519x179.jpg?crc=300362538" alt="" data-heightwidthratio="0.3448940269749518" data-image-width="519" data-image-height="179" data-orig-id="u11968_img" src="images/blank.gif?crc=4208392903"/>
-      </div>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19844_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19850_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19856_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19880_content"><!-- placeholder node --></span>
-      <span class="grpelem placeholder" data-placeholder-for="u19886_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19892_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext grpelem placeholder" data-placeholder-for="u19898_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext anim_swing grpelem placeholder" data-placeholder-for="u19868_content"><!-- placeholder node --></span>
-      <span class="nonblock nontext anim_swing grpelem placeholder" data-placeholder-for="u19838_content"><!-- placeholder node --></span>
-     </div>
-     <div class="clearfix colelem" id="pu7133-4"><!-- group -->
-      <div class="clearfix grpelem" id="u7133-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Owned and Operated in Rankin County, MS</p>
-      </div>
-      <div class="clearfix grpelem" id="u7134-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-       <p>Bots Welcomed is the trading name for What If Solutions, LLC</p>
-      </div>
-     </div>
-    </div>
-    <span class="clearfix grpelem placeholder" data-placeholder-for="u24486-3_content"><!-- placeholder node --></span>
-    <div class="verticalspacer" data-offset-top="5783" data-content-above-spacer="5783" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="5887" data-content-above-spacer="5886" data-content-below-spacer="70" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
   <!-- JS includes -->
@@ -1705,7 +447,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
 </script>
   <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+   window.jQuery || document.write('\x3Cscript src="../scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
 </script>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -1718,42 +460,187 @@ var suppressMissingFileError = false
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.musepolyfill.bgsize","jquery.watch","webpro","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:"../"});require(["jquery","museutils","whatinput","jquery.watch","webpro"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-(function(){
-	try{
-
-$(".hover").mouseleave(function(){$(this).removeClass("hover");});
-require(['https://cdn.jsdelivr.net/npm/object-fit-images@3.2.3/dist/ofi.min.js'], function() {
-var $hbimg = $('.box1 img');objectFitImages($hbimg);
-});
-
-	}
-	catch(e)
-	{
-		Muse.Assert.fail('Error with Widget:180° Text Reveal Hover Box (1.2) ParamHTMLOnDocReady Handler ' + e.toString());
-	}
-})();/* Widget:180° Text Reveal Hover Box (1.2) */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_960', '#bp_650'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
-Muse.Utils.initWidget('#widgetu11750', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu11750 */
-Muse.Utils.initWidget('#widgetu12733', ['#bp_960'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu12733 */
-Muse.Utils.initWidget('#widgetu7097', ['#bp_650'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu7097 */
+Muse.Utils.initWidget('#widgetu17492', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu17492 */
 Muse.Utils.fullPage('#page');/* 100% height page */
-$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
+Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 
 </script>
   <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  <script src="../scripts/require.js?crc=4157109226" type="text/javascript" async data-main="../scripts/museconfig.js?crc=4153641093" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
   
   <!--HTML Widget code-->
   
+<script src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
+<script>
+if(5 == 1){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li>";
+}
+else if(5 == 2){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li>";
+}
+else if(5 == 3){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li>";
+}
+else if(5 == 4){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li>";
+}
+else if(5 == 5){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li>";
+}
+else if(5 == 6){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li>";
+}
+else if(5 == 7){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li>";
+}
+else if(5 == 8){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li><li><a href='#anchor8' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 8</a></li>";
+}
+else if(5 == 9){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li><li><a href='#anchor8' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 8</a></li><li><a href='#anchor9' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 9</a></li>";
+}
+else if(5 == 10){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li><li><a href='#anchor8' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 8</a></li><li><a href='#anchor9' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 9</a></li><li><a href='#anchor10' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 10</a></li>";
+}
+else if(5 == 11){
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li><li><a href='#anchor8' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 8</a></li><li><a href='#anchor9' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 9</a></li><li><a href='#anchor10' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 10</a></li><li><a href='#anchor11' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 11</a></li>";
+}
+else{
+document.getElementById('rsm').innerHTML = "<li><a href='#contact-form' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Email</a></li><li><a href='#anchor2' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Appointment</a></li><li><a href='https://www.messenger.com/t/1707950635943974' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Meet Our Bot</a></li><li><a href='#anchor4' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Brochure</a></li><li><a href='#FAQs' target='_self'><i class='fa fa-arrow-circle-o-right'></i>FAQs</a></li><li><a href='#anchor6' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 6</a></li><li><a href='#anchor7' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 7</a></li><li><a href='#anchor8' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 8</a></li><li><a href='#anchor9' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 9</a></li><li><a href='#anchor10' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 10</a></li><li><a href='#anchor11' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 11</a></li><li><a href='#anchor12' target='_self'><i class='fa fa-arrow-circle-o-right'></i>Menu Item 12</a></li>";
+}
+
+$('.gn-scroller').bind('mousewheel DOMMouseScroll', function(e) {
+var scrollTo = null;
+if (e.type == 'mousewheel') {
+scrollTo = (e.originalEvent.wheelDelta * -1); }
+else if (e.type == 'DOMMouseScroll') {
+scrollTo = 40 * e.originalEvent.detail; }
+if (scrollTo) {
+e.preventDefault();
+$(this).scrollTop(scrollTo + $(this).scrollTop()); }
+});
+
+/**
+ * gnmenu.js v1.0.0
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2013, Codrops
+ * http://www.codrops.com
+ */
+;( function( window ) {
+
+	'use strict';
+
+	// http://stackoverflow.com/a/11381730/989439
+	function mobilecheck() {
+		var check = false;
+		(function(a){if(/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+		return check;
+	}
+
+	function gnMenu( el, options ) {
+		this.el = el;
+		this._init();
+	}
+
+	gnMenu.prototype = {
+		_init : function() {
+			this.trigger = this.el.querySelector( 'a.gn-icon-menu' );
+			this.menu = this.el.querySelector( 'nav.gn-menu-wrapper' );
+			this.isMenuOpen = false;
+			this.eventtype = mobilecheck() ? 'touchstart' : 'click';
+			this._initEvents();
+
+			var self = this;
+			this.bodyClickFn = function() {
+				self._closeMenu();
+				this.removeEventListener( self.eventtype, self.bodyClickFn );
+			};
+		},
+		_initEvents : function() {
+			var self = this;
+
+			if( !mobilecheck() ) {
+				this.trigger.addEventListener( 'mouseover', function(ev) { self._openIconMenu(); } );
+				this.trigger.addEventListener( 'mouseout', function(ev) { self._closeIconMenu(); } );
+
+				this.menu.addEventListener( 'mouseover', function(ev) {
+					self._openMenu();
+					document.addEventListener( self.eventtype, self.bodyClickFn );
+				} );
+			}
+			this.trigger.addEventListener( this.eventtype, function( ev ) {
+				ev.stopPropagation();
+				ev.preventDefault();
+				if( self.isMenuOpen ) {
+					self._closeMenu();
+					document.removeEventListener( self.eventtype, self.bodyClickFn );
+				}
+				else {
+					self._openMenu();
+					document.addEventListener( self.eventtype, self.bodyClickFn );
+				}
+			} );
+			this.menu.addEventListener( this.eventtype, function(ev) { ev.stopPropagation(); } );
+       $('.gn-menu li a').click(function(ev) {self._closeMenu();document.addEventListener(self.eventtype, self.bodyClickFn );});
+		},
+		_openIconMenu : function() {
+			classie.add( this.menu, 'gn-open-part' );
+		},
+		_closeIconMenu : function() {
+			classie.remove( this.menu, 'gn-open-part' );
+		},
+		_openMenu : function() {
+			if( this.isMenuOpen ) return;
+			classie.add( this.trigger, 'gn-selected' );
+			this.isMenuOpen = true;
+			classie.add( this.menu, 'gn-open-all' );
+			this._closeIconMenu();
+		},
+		_closeMenu : function() {
+			if( !this.isMenuOpen ) return;
+			classie.remove( this.trigger, 'gn-selected' );
+			this.isMenuOpen = false;
+			classie.remove( this.menu, 'gn-open-all' );
+			this._closeIconMenu();
+		}
+	}
+
+	// add to global namespace
+	window.gnMenu = gnMenu;
+
+} )( window );
+
+  new gnMenu( document.getElementById( 'gn-menu' ) );
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -0
+        }, 1000, 'linear');
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 
             <script>
                 console.log("Trace - SVG Animator (Version 1.0) - MuseThemes");
@@ -1777,57 +664,28 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
             <script>
                 jQuery(document).ready(function($){
 
-                    var waypointOffsetu24440   = 'autostart' == 'manual' ? '50%' : '100%';
-                    var delayToStartu24440     = 'autostart' == 'manual' ? '100' : '0';
+                    var waypointOffsetu16845   = 'autostart' == 'manual' ? '50%' : '100%';
+                    var delayToStartu16845     = 'autostart' == 'manual' ? '100' : '0';
 
                     $('#svg1').waypoint(function() {
-                        setTimeout('svgu24440.play()', delayToStartu24440);
-                    }, {offset: waypointOffsetu24440});
+                        setTimeout('svgu16845.play()', delayToStartu16845);
+                    }, {offset: waypointOffsetu16845});
 
                     if ('mouseenter' != 'no-replay' && 'mouseenter' != 'in-viewport') {
-                        $('#u24440 .mt-on-mouseenter').on('mouseenter', function() {
-                            $('#u24440 .mt-on-mouseenter').removeClass('mt-svg-animation-finished');
-                            svgu24440.reset().play();
+                        $('#u16845 .mt-on-mouseenter').on('mouseenter', function() {
+                            $('#u16845 .mt-on-mouseenter').removeClass('mt-svg-animation-finished');
+                            svgu16845.reset().play();
                         });
                     } else if ('mouseenter' == 'in-viewport') {
                         $('#svg1').waypoint(function() {
-                            $('#u24440 .mt-on-mouseenter').removeClass('mt-svg-animation-finished');
-                            setTimeout('svgu24440.reset().play()', delayToStartu24440);
-                        }, {offset: waypointOffsetu24440});
+                            $('#u16845 .mt-on-mouseenter').removeClass('mt-svg-animation-finished');
+                            setTimeout('svgu16845.reset().play()', delayToStartu16845);
+                        }, {offset: waypointOffsetu16845});
                     }
 
                 });
             </script>
 
 		
-<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-<script>
-window.sr = ScrollReveal();
-sr.reveal('.show1', {
-  origin: 'bottom',
-  distance: '20px',
-  duration: 500,
-  delay: 0,
-  rotate: {
-    x: 0,
-    y: 0,
-    z: 0
-  },
-  opacity: 0,
-  scale: 0.9,
-  easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  mobile: true,
-  reset: true,
-  useDelay: 'always',
-  viewFactor: 0.2,
-  viewOffset: {
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0
-  }
-});
-</script>
-
    </body>
 </html>
