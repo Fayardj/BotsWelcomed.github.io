@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="botswelcomed.com" resolutions="1x" timestamp="1519873181098">
+<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="botswelcomed.com" resolutions="1x" timestamp="1520392288128">
   <folder name="css">
     <file name="site_global.css" crc="4010076527"/>
-    <file name="index.css" crc="202133755" ref="index"/>
-    <file name="nomq_index.css" crc="421439984" ref="index"/>
+    <file name="index.css" crc="192884949" ref="index"/>
+    <file name="nomq_index.css" crc="164392085" ref="index"/>
     <file name="start.css" crc="303719213" ref="start"/>
     <file name="nomq_start.css" crc="461260011" ref="start"/>
     <file name="schedule.css" crc="73478321" ref="schedule"/>
@@ -11,18 +11,14 @@
   </folder>
   <folder name="assets">
     <file name="newface.svg" crc="4293939980" seo="true" mt="1517976928000"/>
-    <file name="4selling.jpg" crc="377821377" seo="true" mt="1517976928000"/>
+    <file name="4selling.jpg" crc="280968043" seo="true" mt="1515554822000"/>
     <file name="3newsletters.jpg" crc="4182153079" seo="true" mt="1517976928000"/>
     <file name="customerservice.jpg" crc="4024829270" seo="true" mt="1517976928000"/>
     <file name="advertising.jpg" crc="399978990" seo="true" mt="1517976928000"/>
-    <file name="4selling2.jpg" crc="280968043" seo="true" mt="1515554822000"/>
-    <file name="advertising2.jpg" crc="399978990" seo="true" mt="1517976928000"/>
-    <file name="3newsletters2.jpg" crc="4182153079" seo="true" mt="1517976928000"/>
-    <file name="customerservice2.jpg" crc="4024829270" seo="true" mt="1517976928000"/>
-    <file name="advertising3.jpg" crc="399978990" seo="true" mt="1518311877000"/>
-    <file name="3newsletters3.jpg" crc="4182153079" seo="true" mt="1518311877000"/>
-    <file name="customerservice3.jpg" crc="4024829270" seo="true" mt="1518311877000"/>
-    <file name="4selling3.jpg" crc="377821377" seo="true" mt="1518311877000"/>
+    <file name="4selling2.jpg" crc="377821377" seo="true" mt="1518311877000"/>
+    <file name="advertising2.jpg" crc="399978990" seo="true" mt="1518311877000"/>
+    <file name="3newsletters2.jpg" crc="4182153079" seo="true" mt="1518311877000"/>
+    <file name="customerservice2.jpg" crc="4024829270" seo="true" mt="1518311877000"/>
     <file name="newface2.svg" crc="4293939980" seo="true" mt="1518655365000"/>
     <file name="bots-welcomed-brochure-2-(1).pdf" crc="3876444661" seo="true" mt="1519163173000"/>
   </folder>
@@ -127,7 +123,7 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
     </file>
-    <file name="moreleads-crop-u11633.png" crc="420753404" seo="true" ref="index">
+    <file name="moreleads-crop-u11633.png" crc="208457685" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="classify.png" crc="115708903" seo="true" ref="index">
@@ -240,21 +236,33 @@
     <file name="logo copy287x195.png" crc="4253888628" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
+    <file name="4selling.jpg" crc="4072969567" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="advertising.jpg" crc="33270916" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="customerservice.jpg" crc="4121705422" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="3newsletters2.jpg" crc="20465691" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
   </folder>
   <folder name="phone">
     <folder name="css">
       <file name="brochure.css" crc="4125205513" ref="phone>brochure"/>
       <file name="schedule.css" crc="4165001097" ref="phone>schedule"/>
       <file name="nomq_schedule.css" crc="3824530138" ref="phone>schedule"/>
-      <file name="index.css" crc="4013699601" ref="phone>index"/>
+      <file name="index.css" crc="3824258841" ref="phone>index"/>
       <file name="start.css" crc="3806144710" ref="phone>start"/>
     </folder>
-    <file name="index.html" crc="4130407625" seo="true" mt="1518306555607" redirect="true"/>
+    <file name="index.html" crc="4116202602" seo="true" mt="1520392272983" redirect="true"/>
     <file name="start.html" crc="4164330793" seo="true" mt="1517189678022" redirect="true"/>
     <file name="brochure.html" crc="289602108" seo="true" mt="1517187554006" redirect="true"/>
     <file name="schedule.html" crc="242166196" seo="true" mt="1517188317031" redirect="true"/>
   </folder>
-  <file name="index.html" crc="4183484877" seo="true" mt="1519873118208" redirect="true"/>
+  <file name="index.html" crc="4205282597" seo="true" mt="1520390640691" redirect="true"/>
   <file name="start.html" crc="11311153" seo="true" mt="1519804660166" redirect="true"/>
   <file name="brochure.html" crc="86138607" seo="true" mt="1519278407376" redirect="true"/>
   <file name="schedule.html" crc="521819613" seo="true" mt="1518576599673" redirect="true"/>
